@@ -2,8 +2,16 @@
 
 A new flutter package to generate code in dart .
 
-# Example 
-# Create file extension user.jsonser
+
+# Example use  
+
+Add  depencencies
+````
+  dependencies:
+    build_runner: ^1.6.6
+````
+
+## Create file extension user.jsonser
 ````
 {
   "MODEL_NAME":"UserModel",
@@ -30,7 +38,14 @@ A new flutter package to generate code in dart .
     }
   ]
 }
+
 ````
+
+Run command
+````
+ flutter packages pub run build_runner build
+````
+
 # Code generate user_model.dart
 ````
 
