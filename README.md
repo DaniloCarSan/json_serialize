@@ -7,13 +7,13 @@ A new flutter package to generate code in dart .
 
 Add  depencencies
 ````
-  dev_dependencies:
+  dependencies:
     json_serialize:^1.0.0
     build_runner: ^1.6.6
 ````
 or 
 ````
-  dev_dependencies:
+  dependencies:
     json_serialize:
       git:
         url: git://github.com/DaniloCarSan/json_serialize.git
