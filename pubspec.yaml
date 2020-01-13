@@ -11,10 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   build_runner: ^1.6.6
-  path: ^1.0.6
   build: ^1.1.6
   build_config: ^0.4.1+1
-  pedantic: ^1.7.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

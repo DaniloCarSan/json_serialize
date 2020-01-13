@@ -1,6 +1,6 @@
 # json_serialize
 
-A new flutter package to generate code  in dart .
+A new flutter package to generate code in dart .
 
 # Example 
 # Create file extension user.jsonser
@@ -32,7 +32,9 @@ A new flutter package to generate code  in dart .
 }
 ````
 # Code generate user_model.dart
-````class UserModelFields{
+````
+
+class UserModelFields{
   static String tableName = "UserModelFields";
   static String userCode = "USER_CODE";
   static String userName = "USER_NAME";
