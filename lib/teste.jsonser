@@ -1,21 +1,25 @@
 {
-  "MODEL_NAME":"UsuarioModel",
-  "MODEL_NAME_FIELDS":"UsuarioModelFields",
+  "MODEL_NAME":"UserModel",
+  "MODEL_NAME_FIELDS":"UserModelFields",
   "ATRIBUTES_MAP":[
     {
       "TYPE":"int",
-      "NAME":"USUARIO_CODIGO",
-      "VARNAME":"usuarioCodigo",
-      "VALUE":13
+      "NAME":"USER_CODE",
+      "VARNAME":"userCode"
     },
     {
       "TYPE":"String",
-      "NAME":"USUARIO_NOME",
-      "VARNAME":"usuarioNome"
+      "NAME":"USER_NAME",
+      "VARNAME":"userName"
     },
     {
-      "NAME":"USUARIO_EMAIL",
-      "VARNAME":"usuarioEmail"
+      "NAME":"USER_EMAIL",
+      "VARNAME":"userEmail"
+    },
+    {
+      "NAME":"USER_STATUS",
+      "VARNAME":"userStatus",
+      "VALUE":1
     }
   ]
 }

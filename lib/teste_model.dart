@@ -1,34 +1,39 @@
-class UsuarioModelFields{
-  static String tableName = "UsuarioModelFields";
-  static String usuarioCodigo = "USUARIO_CODIGO";
-  static String usuarioNome = "USUARIO_NOME";
-  static String usuarioEmail = "USUARIO_EMAIL";
+class UserModelFields{
+  static String tableName = "UserModelFields";
+  static String userCode = "USER_CODE";
+  static String userName = "USER_NAME";
+  static String userEmail = "USER_EMAIL";
+  static String userStatus = "USER_STATUS";
 }
 
-class UsuarioModel {
+class UserModel {
   int index;
-  int usuarioCodigo = 13;
-  String usuarioNome; 
-  dynamic usuarioEmail; 
+  int userCode; 
+  String userName; 
+  dynamic userEmail; 
+  dynamic userStatus = 1;
 
-  UsuarioModel({
+  UserModel({
     this.index,
-    this.usuarioCodigo,
-    this.usuarioNome,
-    this.usuarioEmail
+    this.userCode,
+    this.userName,
+    this.userEmail,
+    this.userStatus
   });
 
-  UsuarioModel.fromJson(Map<String,dynamic>json):
-    this.usuarioCodigo = json[UsuarioModelFields.usuarioCodigo],
-    this.usuarioNome = json[UsuarioModelFields.usuarioNome],
-    this.usuarioEmail = json[UsuarioModelFields.usuarioEmail];
+  UserModel.fromJson(Map<String,dynamic>json):
+    this.userCode = json[UserModelFields.userCode],
+    this.userName = json[UserModelFields.userName],
+    this.userEmail = json[UserModelFields.userEmail],
+    this.userStatus = json[UserModelFields.userStatus];
   
   Map<String,dynamic>toJson({List<dynamic> getKeys , List<dynamic>  notKeys }){
 
     Map<String,dynamic> map = {
-      UsuarioModelFields.usuarioCodigo: this.usuarioCodigo,
-      UsuarioModelFields.usuarioNome: this.usuarioNome,
-      UsuarioModelFields.usuarioEmail: this.usuarioEmail    
+      UserModelFields.userCode: this.userCode,
+      UserModelFields.userName: this.userName,
+      UserModelFields.userEmail: this.userEmail,
+      UserModelFields.userStatus: this.userStatus    
     }; 
 
     if(getKeys != null )
@@ -46,23 +51,28 @@ class UsuarioModel {
 
   List<dynamic> toList()=>[
     this.index,
-    this.usuarioCodigo,
-    this.usuarioNome,
-    this.usuarioEmail
+    this.userCode,
+    this.userName,
+    this.userEmail,
+    this.userStatus
   ];
 
   setIndex(int index){
     this.index = index;
   }
-  setUsuarioCodigo( int usuarioCodigo){
-    this.usuarioCodigo = usuarioCodigo; 
+  setUserCode( int userCode){
+    this.userCode = userCode; 
   }
 
-  setUsuarioNome( String usuarioNome){
-    this.usuarioNome = usuarioNome; 
+  setUserName( String userName){
+    this.userName = userName; 
   }
 
-  setUsuarioEmail( dynamic usuarioEmail){
-    this.usuarioEmail = usuarioEmail; 
+  setUserEmail( dynamic userEmail){
+    this.userEmail = userEmail; 
+  }
+
+  setUserStatus( dynamic userStatus){
+    this.userStatus = userStatus; 
   }  
  }
