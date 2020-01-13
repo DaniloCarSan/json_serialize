@@ -14,15 +14,16 @@ Add  depencencies
     build_runner: ^1.6.6
 ````
 ## Estructure to file extension .jsonser
-````
-MODEL_NAME | REQUIRED
-MODEL_NAME_FIELDS | REQUIRED
-ATRIBUTES_MAP | REQUIRED
-  TYPE | NO REQUIRED | DEFAULT dynamic
-  NAME | REQUIRED
-  VARNAME | REQUIRED
-  VALUE | NO REQUIRED
 
+- **MODEL_NAME** | REQUIRED
+- **MODEL_NAME_FIELDS** | REQUIRED
+- **ATRIBUTES_MAP** | REQUIRED
+  - **TYPE** | NO REQUIRED | DEFAULT dynamic
+  - **NAME** | REQUIRED
+  - **VARNAME** | REQUIRED
+  - **VALUE** | NO REQUIRED
+
+````
 {
   "MODEL_NAME":"modelName",
   "MODEL_NAME_FIELDS":"modelNameFields",
