@@ -19,6 +19,31 @@ or
         url: git://github.com/DaniloCarSan/json_serialize.git
     build_runner: ^1.6.6
 ````
+## Estructure to file extension .jsonser
+````
+MODEL_NAME | REQUIRED
+MODEL_NAME_FIELDS | REQUIRED
+ATRIBUTES_MAP | REQUIRED
+  TYPE | NO REQUIRED | DEFAULT dynamic
+  NAME | REQUIRED
+  VARNAME | REQUIRED
+  VALUE | NO REQUIRED
+
+{
+  "MODEL_NAME":"modelName",
+  "MODEL_NAME_FIELDS":"modelNameFields",
+  "ATRIBUTES_MAP":[
+    {
+      "TYPE":"int",
+      "NAME":"USER_CODE",
+      "VARNAME":"userCode",
+      "VALUE":1
+    },
+  ]
+}
+````
+
+
 
 ## Create file extension user.jsonser
 ````
