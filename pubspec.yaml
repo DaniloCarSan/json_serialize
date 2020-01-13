@@ -1,0 +1,21 @@
+name: json_serialize
+description: A new flutter package to facilitate darts code generation through json.
+version: 1.0.0
+author: Danilo Santos <danilocarsan@gmail.com>
+homepage: https://github.com/DaniloCarSan/json_serialize
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  build_runner: ^1.6.6
+  path: ^1.0.6
+  build: ^1.1.6
+  build_config: ^0.4.1+1
+  pedantic: ^1.7.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:

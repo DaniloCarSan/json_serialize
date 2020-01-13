@@ -1,0 +1,22 @@
+{
+  "MODEL_NAME":"UsuarioModel",
+  "MODEL_NAME_FIELDS":"UsuarioModelFields",
+  "ATRIBUTES_MAP":[
+    {
+      "TYPE":"int",
+      "NAME":"USUARIO_CODIGO",
+      "VARNAME":"usuarioCodigo",
+      "VALUE":13
+    },
+    {
+      "TYPE":"String",
+      "NAME":"USUARIO_NOME",
+      "VARNAME":"usuarioNome"
+    },
+    {
+      "NAME":"USUARIO_EMAIL",
+      "VARNAME":"usuarioEmail"
+    }
+  ]
+}
+

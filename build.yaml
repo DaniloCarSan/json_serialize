@@ -1,0 +1,15 @@
+targets:
+  json_serialize:json_serialize:
+    builders:
+      json_serialize|jsonSerializeBuilder:
+        enabled: True
+builders:
+  jsonSerializeBuilder:
+    import: 'package:json_serialize/json_serialize.dart'
+    builder_factories: ['jsonSerializeBuilder']
+    build_extensions: 
+      .jsonser:
+        - .dart
+
+    build_to: source
+    auto_apply: root_package
