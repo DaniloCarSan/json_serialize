@@ -125,6 +125,16 @@ class UserModel {
     { 
       map.removeWhere((k,v)=> notKeys.contains(k)); 
     } 
+    
+    if(isNull)
+    {
+      map.removeWhere((k,v)=>v!=null);
+    }
+
+    if(notNull)
+    {
+      map.removeWhere((k,v)=>v==null);
+    }
 
     return map;
   }
