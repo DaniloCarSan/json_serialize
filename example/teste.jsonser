@@ -1,0 +1,24 @@
+{
+  "MODEL_NAME":"UserModel",
+  "MODEL_NAME_FIELDS":"UserModelFields",
+  "PRIMARY_KEY_NAME":"USER_CODE",
+  "ATRIBUTES_MAP":[
+    {
+      "TYPE":"String",
+      "NAME":"USER_NAME",
+      "VARNAME":"userName",
+      "IS_NOT_NULL":true,
+      "IS_UNIQUE":true,
+      "VALUE":234567890,
+      "IS_PRIMARY_KEY":true,
+      "FOREIGN_KEY":["232","343"]
+    },
+    {
+      "TYPE":"String",
+      "NAME":"USER_EMAIL",
+      "VARNAME":"userEmail",
+      "IS_NOT_NULL":true
+    }
+  ]
+}
+
